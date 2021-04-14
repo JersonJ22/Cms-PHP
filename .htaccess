@@ -1,0 +1,30 @@
+Options +FollowSymLinks
+RewriteEngine on 
+
+#RewriteRule ^log_out$ res/php/user_actions/log_out.php?section=log_out [QSA]
+RewriteRule ^log_out$ res/php/user_actions/log_out.php [QSA]
+
+#Rutas Administradores
+RewriteRule ^admin/posts$ admin/index.php?section=posts [QSA]
+RewriteRule ^admin/curso/([0-9]+)$ admin/index.php?section=curso&id_curso=$1 [QSA]
+#RewriteRule ^admin/evento/([0-9]+)$ admin/index.php?section=temarioevento&id_evento=$1 [QSA]
+RewriteRule ^admin/temario-curso/([0-9]+)$ admin/index.php?section=temario-curso&id_curso=$1 [QSA]
+RewriteRule ^admin/temario-evento/([0-9]+)$ admin/index.php?section=temario-evento&id_evento=$1 [QSA]
+RewriteRule ^admin/update-profesor/([0-9]+)$ admin/index.php?section=update-profesor&id_profesor=$1 [QSA]
+RewriteRule ^admin/categories$ admin/index.php?section=categories [QSA]
+RewriteRule ^admin/cursos$ admin/index.php?section=cursos [QSA]
+RewriteRule ^admin/temario$ admin/index.php?section=temario [QSA]
+RewriteRule ^admin/temarioevento$ admin/index.php?section=temarioevento [QSA]
+RewriteRule ^admin/evento$ admin/index.php?section=evento [QSA]
+RewriteRule ^admin/profesor$ admin/index.php?section=profesor [QSA]
+RewriteRule ^admin/misprofesores$ admin/index.php?section=misprofesores [QSA]
+
+#Rutas Usuarios
+RewriteRule ^posts$ index.php?section=posts [QSA]
+RewriteRule ^post/([0-9]+)$ index.php?section=post&id_curso=$1 [QSA]
+RewriteRule ^evento/([0-9]+)$ index.php?section=evento&id_evento=$1 [QSA]
+RewriteRule ^register$ index.php?section=register [QSA]
+RewriteRule ^log_in$ index.php?section=log_in [QSA]
+RewriteRule ^my_favorites$ index.php?section=my_favorites [QSA]
+RewriteRule ^my_perfil$ index.php?section=my_perfil [QSA]
+
