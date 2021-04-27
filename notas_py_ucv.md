@@ -30,8 +30,9 @@ cms
 
 # Notas 27/04/2021
 
-* cms_olive 
+* cms_olive (nombre del proyecto)
 * todas las rutas relativas 
+## estructura del proyecto
 * assets 
   * css
   * js
