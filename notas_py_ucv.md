@@ -26,3 +26,30 @@ cms
    * listado de comentarios
 
  para el día 25/04/2021 mostrar el 25% avance o más
+
+
+# Notas 27/04/2021
+
+* cms_olive 
+* todas las rutas relativas 
+* assets 
+  * css
+  * js
+  * resources
+    * img
+    * fonts
+    * ? 
+* admin 
+    * repository
+      * model
+      * persona, empresa
+    * service
+      * consulta a personas return persona
+    * controller
+      * instancia de service -
+    * view
+      * html
+* user 
+    * repository
+    * controller
+    * view
